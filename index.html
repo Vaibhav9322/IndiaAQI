@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality and Population Density in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet-control-search/dist/leaflet-search.src.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1>Air Quality and Population Density in India</h1>
+        <p>An analysis of AQI and population distribution across major cities</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#map-section">Interactive Map</a>
+        <a href="#analysis-section">Analysis</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About the Project</h2>
+        <p>This project visualizes air quality levels and population density in India, highlighting areas with critical
+            air pollution and its potential impact on densely populated regions.</p>
+    </section>
+
+    <!-- Added Map Section -->
+    <section id="map-section">
+        <h2>Interactive Map</h2>
+        <div id="map" class="map-container"></div>
+    </section>
+
+    <!-- Added Analysis Section -->
+    <section id="analysis-section">
+        <h2>AQI Analysis</h2>
+        <canvas id="aqiChart" width="400" height="200"></canvas>
+        <p>The chart above shows average AQI levels in major cities compared to population density.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Questions or suggestions? Email us at <a href="mailto:vaibhavadhav48@gmail.com">vaibhavadhav48@gmail.com</a>.
+        </p>
+    </section><br><br>
+    <footer>
+        <p>© 2024 GIS India Project. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="aqi-analysis.js"></script> <!-- Add this for analysis -->
+</body>
+
+</html>
